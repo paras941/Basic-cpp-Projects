@@ -1,8 +1,10 @@
+// Bank managemnent
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
-// ======== Base class ========
+
 class Account {
 protected:
     int accNumber;
@@ -23,7 +25,6 @@ public:
     virtual ~Account() {}  // Virtual destructor for cleanup
 };
 
-// ======== Derived class: Savings ========
 class SavingsAccount : public Account {
     double interestRate;
 
@@ -40,7 +41,6 @@ public:
     }
 };
 
-// ======== Derived class: Current ========
 class CurrentAccount : public Account {
     double overdraftLimit;
 
@@ -57,7 +57,6 @@ public:
     }
 };
 
-// ======== Main Program ========
 int main() {
     // Create a list of Account pointers
     vector<Account*> accounts;
@@ -77,7 +76,7 @@ int main() {
         cout << "----------------------\n";
     }
 
-    // Clean up
+    
     for (Account* acc : accounts) {
         delete acc;
     }
