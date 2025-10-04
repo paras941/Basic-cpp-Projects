@@ -44,7 +44,7 @@ int main(){
         switch (choice){
         case 1:
             students[count].set();
-            count++;                                      // this case is for the addition of the marks of  the student 
+            count++;                               
             cout<<" Students successfully added ";
             break;
 
@@ -52,7 +52,7 @@ int main(){
             if (count==0){
                 cout<<" No Record added ";
             }else{
-                cout<<" Here the Details"<<endl;             // This checks the previous addition of the student 
+                cout<<" Here the Details"<<endl;            
                 for( int i=0;i<count;i++){
                     students[i].display();
                     
@@ -65,7 +65,7 @@ int main(){
                     cout<<" No Record added";
                  }else{
                     int searchroll;
-                    cout << " Enter the roll number";           // This case search the required rollnumber 
+                    cout << " Enter the roll number";        
                     cin>>searchroll;
 
                     bool found ;
@@ -83,16 +83,14 @@ int main(){
                     }
                  
                  case 4:
-                 cout<<" exiting program";                          // exit the program
+                 cout<<" exiting program";                
                  break;
-
-
             }
         
         default:
-        cout<<"Invalid choice";                         //Invalid  choice 
+        cout<<"Invalid choice";                          
         }
-    } while (choice !=4);                                // This loop run until the choice is 4 
+    } while (choice <4);                                 
     
     
 return 0;

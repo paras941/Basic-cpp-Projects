@@ -15,14 +15,14 @@ public:
     Account(int accNo, string custName, double bal)
         : accNumber(accNo), name(custName), balance(bal) {}
 
-    // Virtual function for polymorphism
+    
     virtual void display() {
         cout << "Account Number: " << accNumber << endl;
         cout << "Customer Name: " << name << endl;
         cout << "Balance: " << balance << endl;
     }
 
-    virtual ~Account() {}  // Virtual destructor for cleanup
+    virtual ~Account() {}  
 };
 
 class SavingsAccount : public Account {
@@ -58,21 +58,21 @@ public:
 };
 
 int main() {
-    // Create a list of Account pointers
+    
     vector<Account*> accounts;
 
-    // Add a SavingsAccount
+   
     accounts.push_back(new SavingsAccount(101, "Alice", 5000, 3.5));
 
-    // Add a CurrentAccount
+    
     accounts.push_back(new CurrentAccount(102, "Bob", 10000, 2000));
 
-    // Add another SavingsAccount
+    
     accounts.push_back(new SavingsAccount(103, "Charlie", 7000, 4.0));
 
     cout << "\n=== Bank Account Details ===\n";
     for (Account* acc : accounts) {
-        acc->display();  // Polymorphic call!
+        acc->display();  
         cout << "----------------------\n";
     }
 
