@@ -13,7 +13,7 @@ This is a **simple Bank Management System** implemented in C++ to demonstrate **
   - Customer Name
   - Balance
 - Two derived classes demonstrate inheritance:
-  - `SavingsAccount` → includes **interest rate**
+  - `SavingsAccount` → includes **interest rate**.
   - `CurrentAccount` → includes **overdraft limit**
 - **Polymorphism** is used to call the appropriate `display()` function dynamically.
 - **Dynamic memory management** via `new` and `delete` ensures proper cleanup.
