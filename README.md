@@ -74,7 +74,7 @@ This is a **basic console-based calculator** implemented in C++ that performs **
 
 ---
 
-## 💡 Project Overview
+## 💡 Project Overview.
 
 - Provides a **menu-driven interface** for performing calculations.
 - Supports the following operations:
